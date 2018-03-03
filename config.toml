@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "jdilger.github.io"
+baseurl = "jdilger.github.io/"
 languageCode = "en"
 title = "John Dilger"
 theme = "cactusplus"
