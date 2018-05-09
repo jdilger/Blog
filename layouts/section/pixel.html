@@ -1,0 +1,30 @@
+{{ partial "testHead.html" . }}
+<body class="pixelGoogle">
+{{ partial "nav.html" . }}
+{{ partial "profile.html" . }}
+
+<!-- <section id="wrapper" class="home"> -->
+<section class="home" id="wrapper">
+    {{ .Content }}
+
+    <form class="pixelGoogle" id="sizePicker">
+        Grid Height:
+        <input class="pixelGoogle" type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input class="pixelGoogle" type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit" class="subbed">
+    </form>
+
+    <h2 class="pixelGoogle">Pick A Color</h2>
+    <input class="pixelGoogle" type="color" id="colorPicker">
+
+    <h2 class="pixelGoogle">Design Canvas</h2>
+    <table class="pixelGoogle" id="pixelCanvas"></table>
+
+    <script src="{{ .Site.BaseURL }}js/designs.js"></script>
+
+    {{ partial "footer.html" . }}
+</section>
+
+{{ partial "js.html" . }}
+</body>
